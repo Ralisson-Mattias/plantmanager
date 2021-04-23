@@ -1,12 +1,9 @@
 import { useNavigation } from '@react-navigation/core'
 import React, { useEffect, useState } from 'react'
 import {
-    StyleSheet,
+    ActivityIndicator, FlatList, StyleSheet,
     Text,
-    View,
-    FlatList,
-    ActivityIndicator,
-    Dimensions
+    View
 } from 'react-native'
 import { EnvironmentButton } from '../components/EnviromentButton'
 import { Header } from '../components/Header'
@@ -16,6 +13,8 @@ import { PlantProps } from '../libs/storage'
 import api from '../services/apis'
 import colors from '../styles/colors'
 import fonts from '../styles/fonts'
+
+
 
 
 interface EnvironmentProps {
